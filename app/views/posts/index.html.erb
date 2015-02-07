@@ -1,5 +1,7 @@
-<ul>
-	<% @post.each do |post| %>
-		<li><%= post.title %></li>
-	<% end %>
-</ul>
+<% @post.each do |post| %>
+	<article>
+	<header><%= link_to post.title, post %></header>
+	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+	<div class="post-message"><%= post.message %></div>
+	</article>
+<% end %>

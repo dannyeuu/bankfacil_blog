@@ -3,12 +3,15 @@
 <head>
   <title>Blog BankFacil :: Teste de código</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="conteudo">
+	<h1>BankFacil Blog</h1>
 
-<%= yield %>
+	<%= yield %>
+</div>
 
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
