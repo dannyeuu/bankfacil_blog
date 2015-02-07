@@ -1742,3 +1742,1276 @@ Migrating to CreateFriendlyIdSlugs (20150207161439)
             FROM sqlite_temp_master
             WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
 [0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:17:13 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (115.2ms)
+Completed 500 Internal Server Error in 371ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x0000000567d928>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__3803811488028525968_44896040'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__3803811488028525968_44896040'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (49.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:17:24 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x000000059fa1a0>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__3803811488028525968_44896040'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__3803811488028525968_44896040'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (42.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:24:01 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (97.0ms)
+Completed 500 Internal Server Error in 451ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x00000005d13e68>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__1422397383681938560_48337320'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__1422397383681938560_48337320'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (16.2ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (88.0ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2015-02-07 14:24:50 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"1"}
+  [1m[36mPost Load (17.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = '1'  ORDER BY "posts"."id" ASC LIMIT 1[0m
+SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = '1'  ORDER BY "posts"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 283ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = '1'  ORDER BY "posts"."id" ASC LIMIT 1):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (16.2ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (57.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:24:59 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x007f492848d848>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__1422397383681938560_48337320'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__1422397383681938560_48337320'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.9ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (41.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:28:12 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x007f4928039aa8>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__1422397383681938560_48337320'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__1422397383681938560_48337320'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.2ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (41.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:28:23 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x00000006210b28>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__1422397383681938560_48337320'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__1422397383681938560_48337320'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (42.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:29:51 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x0000000610b868>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__1422397383681938560_48337320'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__1422397383681938560_48337320'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (81.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (111.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:31:09 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (126.6ms)
+Completed 500 Internal Server Error in 378ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x00000004ebd800>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__2823886411115491105_40785240'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__2823886411115491105_40785240'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (113.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 14:33:48 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `slug' for #<Post:0x00000004f49468>):
+    1: <% @post.each do |post| %>
+    2: 	<article>
+    3: 	<header><%= link_to post.title, post %></header>
+    4: 	<div class="post-date"><span>Postado em: </span><%= post.created_at.strftime("%d/%m/%Y") %></div>
+    5: 	<div class="post-message"><%= post.message %></div>
+    6: 	</article>
+  app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__2823886411115491105_40785240'
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__2823886411115491105_40785240'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (13.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (41.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'Macaco-quer-banana'  ORDER BY "posts"."id" ASC LIMIT 1[0m
+SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'Macaco-quer-banana'  ORDER BY "posts"."id" ASC LIMIT 1
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.7ms)[0m  UPDATE "posts" SET "slug" = 'primeiro-post' WHERE "posts"."id" = ?  [["id", 1]]
+SQLite3::SQLException: no such column: slug: UPDATE "posts" SET "slug" = 'primeiro-post' WHERE "posts"."id" = ?
+  [1m[36m (11.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:07:46 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (480.7ms)
+Completed 200 OK in 1259ms (Views: 1083.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/posts-e7455c728d81261fb3bba29cc4f9909b.css?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/application-ec25040c0197324f3e0e684ea8b76e74.css?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:07:48 -0200
+
+
+Started GET "/outro-post" for 127.0.0.1 at 2015-02-07 15:07:52 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"outro-post"}
+  [1m[36mPost Load (59.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'outro-post'  ORDER BY "posts"."id" ASC LIMIT 1[0m
+SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'outro-post'  ORDER BY "posts"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 205ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'outro-post'  ORDER BY "posts"."id" ASC LIMIT 1):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (57.1ms)
+
+
+Started GET "/outro-post" for 127.0.0.1 at 2015-02-07 15:07:53 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"outro-post"}
+  [1m[35mPost Load (1.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'outro-post'  ORDER BY "posts"."id" ASC LIMIT 1
+SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'outro-post'  ORDER BY "posts"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 6ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'outro-post'  ORDER BY "posts"."id" ASC LIMIT 1):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (38.7ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:20:21 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (372.2ms)
+Completed 200 OK in 938ms (Views: 751.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:20:23 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:20:23 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:20:23 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:20:23 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:20:23 -0200
+
+
+Started GET "/primeiro-post" for 127.0.0.1 at 2015-02-07 15:20:27 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"primeiro-post"}
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'primeiro-post'  ORDER BY "posts"."id" ASC LIMIT 1[0m
+SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'primeiro-post'  ORDER BY "posts"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 110ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'primeiro-post'  ORDER BY "posts"."id" ASC LIMIT 1):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.2ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+
+
+Started GET "/primeiro-post" for 127.0.0.1 at 2015-02-07 15:20:28 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"primeiro-post"}
+  [1m[35mPost Load (1.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'primeiro-post'  ORDER BY "posts"."id" ASC LIMIT 1
+SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'primeiro-post'  ORDER BY "posts"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 6ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: posts.slug: SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = 'primeiro-post'  ORDER BY "posts"."id" ASC LIMIT 1):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (39.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddSlugToPosts (20150207172510)
+  [1m[35m (52.7ms)[0m  begin transaction
+  [1m[36m (19.1ms)[0m  [1mALTER TABLE "posts" ADD "slug" varchar[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX "index_posts_on_slug" ON "posts" ("slug")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207172510"]]
+  [1m[36m (187.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_posts_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_posts_on_slug' AND type='index'
+[0m
+
+
+Started GET "/primeiro-post" for 127.0.0.1 at 2015-02-07 15:27:00 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"primeiro-post"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "primeiro-post"]]
+Completed 404 Not Found in 167ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (97.5ms)
+
+
+Started GET "/1" for 127.0.0.1 at 2015-02-07 15:27:18 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "1"]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/post.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 194ms (Views: 180.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:18 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:18 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:18 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:18 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:18 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:27:25 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (217.7ms)
+Completed 200 OK in 284ms (Views: 282.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:25 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:25 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:25 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:25 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:27:25 -0200
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:27:27 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "macaco-quer-banana"]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (35.9ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:27:27 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "macaco-quer-banana"]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (10.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (39.3ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mPost Exists (0.4ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."id" IS NOT NULL) AND "posts"."slug" = ? LIMIT 1  [["slug", "teste-com-aracatuba"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "message", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Teste com Araçatuba"], ["message", "This short post assumed you are familiar with what HTTP caching is and what rack-cache does. If not read this. I am using rack-cache 1.2 inside a Ruby on Rails 4.1 application, its default behaviour treats every URL including the query string as a separate fragment in the meta store."], ["slug", "teste-com-aracatuba"], ["created_at", "2015-02-07 17:27:43.710091"], ["updated_at", "2015-02-07 17:27:43.710091"]]
+  [1m[35m (193.5ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:28:28 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (263.7ms)
+Completed 200 OK in 597ms (Views: 502.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/posts-e7455c728d81261fb3bba29cc4f9909b.css?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/assets/application-ec25040c0197324f3e0e684ea8b76e74.css?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:29 -0200
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:28:32 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 222ms (Views: 121.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:32 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:32 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:32 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:32 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:28:32 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:30:01 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 187ms (Views: 184.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:30:01 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 148ms (Views: 146.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-27b3557cb7000d213bcdfc846548e33c.css?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/assets/application-6df106102983686806de770579276c86.css?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:02 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:30:14 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/posts-27b3557cb7000d213bcdfc846548e33c.css?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/assets/application-6df106102983686806de770579276c86.css?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:30:15 -0200
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:30:52 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:30:54 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 176ms (Views: 174.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-3336e67fadd4436ba5a3a9c43ccaac3e.css?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/assets/application-228afa839d182394b06c287bf4cae74d.css?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:34:02 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:36:45 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/posts-f9ee96777037f728b9ce5abb1d3c6094.css?body=1" for 127.0.0.1 at 2015-02-07 15:36:45 -0200
+
+
+Started GET "/assets/application-bddc87dc4af31a9e09579213e3723fd8.css?body=1" for 127.0.0.1 at 2015-02-07 15:36:45 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:36:46 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:36:46 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:36:46 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:36:46 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:36:46 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-9e89d0c128afb07be3312076b9542dba.css?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/assets/application-17e3278b86ed8a5baa8844e6e4be2a4e.css?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:37:22 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:37:45 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 176ms (Views: 174.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-2141920afd48b1d0d775e9f0afefa5c5.css?body=1" for 127.0.0.1 at 2015-02-07 15:37:45 -0200
+
+
+Started GET "/assets/application-593c3df29ddc50adde1641fd960fc8b8.css?body=1" for 127.0.0.1 at 2015-02-07 15:37:46 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:39:20 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 193ms (Views: 191.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-c52e89d72b3a66f2cacd2e368d9d54b9.css?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/assets/application-ef4f60651303ede4427b0454c6606767.css?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:39:21 -0200
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:39:44 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:39:45 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:39:46 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "macaco-quer-banana"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (107.6ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:39:47 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "macaco-quer-banana"]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (ActiveRecord::RecordNotFound):
+  app/controllers/posts_controller.rb:7:in `post'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (36.5ms)
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (188.9ms)[0m  UPDATE "posts" SET "slug" = 'primeiro-post' WHERE "posts"."id" = ?  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (171.0ms)[0m  UPDATE "posts" SET "slug" = 'outro-post' WHERE "posts"."id" = ?  [["id", 2]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSQL (133.6ms)[0m  UPDATE "posts" SET "slug" = 'macaco-quer-banana' WHERE "posts"."id" = ?  [["id", 3]]
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:41:43 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "macaco-quer-banana"]]
+  Rendered posts/post.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 363ms (Views: 182.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:42:41 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "macaco-quer-banana"]]
+  Rendered posts/post.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 123ms
+
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x000000054f7270>:0x007f0fc8870328>):
+     7: </head>
+     8: <body>
+     9: <div class="conteudo">
+    10: 	<h1><%= link_to 'BankFacil Blog', root %></h1>
+    11: 
+    12: 	<%= yield %>
+    13: </div>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2931436245477479890_69852882799020'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (15.9ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (53.7ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:43:32 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "macaco-quer-banana"]]
+  Rendered posts/post.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x0000000550c1e8>:0x00000005530598>):
+     7: </head>
+     8: <body>
+     9: <div class="conteudo">
+    10: 	<h1><%= link_to 'BankFacil Blog', root %></h1>
+    11: 
+    12: 	<%= yield %>
+    13: </div>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2931436245477479890_69852882799020'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (39.6ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:43:38 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "macaco-quer-banana"]]
+  Rendered posts/post.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x0000000550c1e8>:0x000000058e64a8>):
+     7: </head>
+     8: <body>
+     9: <div class="conteudo">
+    10: 	<h1><%= link_to 'BankFacil Blog', root %></h1>
+    11: 
+    12: 	<%= yield %>
+    13: </div>
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__2931436245477479890_69852882799020'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.0ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /home/daniel/.rvm/gems/ruby-1.9.3-p551@bankfacil_test/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (39.5ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "macaco-quer-banana"]]
+  Rendered posts/post.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/assets/application-ef4f60651303ede4427b0454c6606767.css?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/assets/posts-c52e89d72b3a66f2cacd2e368d9d54b9.css?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:45:36 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:38 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (267.4ms)
+Completed 200 OK in 330ms (Views: 328.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:40 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:42 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:45:44 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 149ms (Views: 146.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:46 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/macaco-quer-banana" for 127.0.0.1 at 2015-02-07 15:45:48 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"macaco-quer-banana"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "macaco-quer-banana"]]
+  Rendered posts/post.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:49 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:45:50 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 153ms (Views: 150.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:52 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/outro-post" for 127.0.0.1 at 2015-02-07 15:45:54 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"outro-post"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "outro-post"]]
+  Rendered posts/post.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:45:55 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:46:58 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 163ms (Views: 160.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:47:03 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:47:09 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:47:12 -0200
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 133ms (Views: 131.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-49ef85092fbcb81afe661e292dc1065e.css?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/assets/application-442c81c997ee4fb729c80a5076d08fa9.css?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:55 -0200
+
+
+Started GET "/teste-com-aracatuba" for 127.0.0.1 at 2015-02-07 15:48:58 -0200
+Processing by PostsController#post as HTML
+  Parameters: {"post"=>"teste-com-aracatuba"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = ?  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "teste-com-aracatuba"]]
+  Rendered posts/post.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 146ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:58 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:58 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:58 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:58 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:48:58 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 15:49:00 -0200
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-02-07 15:49:01 -0200
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 127.0.0.1 at 2015-02-07 15:49:01 -0200
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-02-07 15:49:01 -0200
+
+
+Started GET "/assets/application-79e1233a68e5fdd328d8a2ea17ddef8a.js?body=1" for 127.0.0.1 at 2015-02-07 15:49:01 -0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-02-07 15:49:01 -0200

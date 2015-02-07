@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'posts#index'
+  root 'posts#index', as:'root'
 
   get ':post' => 'posts#post', as: 'post'
-  resources :post
+
   # get 'novo' => 'post#new', as: 'new'
   # post 'novo' => 'post#new', as: 'new'
   # get 'editar' => 'post#edit', as: 'edit'
