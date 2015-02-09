@@ -46,3 +46,5 @@ group :development, :test do
 end
 
 gem "rspec-rails", :group => [:development, :test]
+
+gem 'shoulda-matchers', '~> 2.8.0'

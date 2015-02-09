@@ -1,8 +1,11 @@
+
 Rails.application.routes.draw do
 
   root 'posts#index', as:'root'
 
   get ':post' => 'posts#post', as: 'post'
+  get 'post/novo' => 'posts#novo', as: 'new_post'
+  post 'post/novo' => 'posts#create'
 
   # get 'novo' => 'post#new', as: 'new'
   # post 'novo' => 'post#new', as: 'new'
